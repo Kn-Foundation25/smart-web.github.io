@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartWeb | La Red Definitiva</title>
+    <style>
+        :root {
+            --primary-blue: #00a8ff;
+            --light-blue: #e3f2fd;
+            --text-dark: #2c3e50;
+            --white: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--white);
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Fondo decorativo suave */
+        .bg-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 100%);
+            z-index: -1;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 800px;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        /* Logo muy grande */
+        .logo-img {
+            width: 250px; /* Tamaño grande solicitado */
+            height: auto;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-img:hover {
+            transform: scale(1.05);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 168, 255, 0.3);
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: var(--primary-blue);
+            margin: 0;
+            letter-spacing: -2px;
+            font-weight: 800;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--text-dark);
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        .hero-box {
+            margin-top: 40px;
+            padding: 30px;
+            background: var(--white);
+            border-radius: 20px;
+            border: 2px solid var(--light-blue);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .highlight {
+            color: var(--primary-blue);
+            font-weight: 800;
+            font-size: 2.2rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #5d6d7e;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 1rem;
+            color: #bdc3c7;
+        }
+
+        strong {
+            color: var(--primary-blue);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-pattern"></div>
+
+    <div class="container">
+        <!-- Logo muy grande -->
+        <img src="Logo.png" alt="Logo Smartium" class="logo-img">
+        
+        <br>
+        <span class="badge">Enero 2026</span>
+        
+        <h1>SmartWeb</h1>
+        <h2>La red social definitiva para <strong>Smartium</strong></h2>
+
+        <div class="hero-box">
+            <span class="highlight">0% BANEADA</span>
+            <p>
+                Diseñada para ser el punto de encuentro oficial. Una plataforma robusta, moderna y creada para que la comunidad de Smartium nunca deje de estar conectada.
+            </p>
+        </div>
+
+        <footer>
+            Hecho con excelencia por <strong>Max de Smartium</strong>
+        </footer>
+    </div>
+
+</body>
+</html>
